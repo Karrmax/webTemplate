@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon super site</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body onload="loadBase()">
+    <!-- Bar de navigation complete -->
+    <header>
+        <img id="logo" src="../images/logo.png" alt="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lien 1</a></li>
+                <li><a href="#">Lien 2</a></li>
+                <li><a href="#">Lien 3</a></li>
+                <li><a href="#">Lien 4</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <!-- Fin bar de navigation -->
+
+    <!-- Section principale du site (je sais que la balise main existe mais elle semble dépréciée) -->
+    <section id="main">
+        <div id="warper">
+            <!-- Template pour éviter la redondance de code -->
+            <template id="card-template">
+                <div class="card">
+                    <img src="{{image}}" class="card-img" loading="lazy">
+                    <p>{{text}}</p>
+                    <div class=" mana-img">
+                    </div>
+                </div>
+            </template>
+
+        </div>
+    </section>
+    
+</body>
+</html>
